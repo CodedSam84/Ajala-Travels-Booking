@@ -1,0 +1,31 @@
+.guest {
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.plus-btn {
+  padding: 6px 14px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.minus-btn {
+  padding: 1px 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.guest-profiles {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid gray;
+}

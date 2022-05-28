@@ -1,0 +1,64 @@
+.logo-container {
+  background: url("../../assets/LOGO.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+
+}
+
+.navbar {
+  background-color: #F9F8F7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Cabin";
+  max-width: 1220px;
+  margin: auto;
+  padding: 0 50px;
+  color: #292929;
+}
+
+.nav-link {
+  
+  text-decoration: none;
+  color: #263549;
+}
+
+.nav-link-container {
+  padding: 10px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-link-container:hover {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.button {
+  width: 130px;
+  height: 35px;
+  border-radius: 40px;
+  border: 1px solid #8D965E;
+  margin-bottom: 2px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 20px;
+  color: #263549;
+}
+
+.button:hover {
+  border: 2px solid #8D965E;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  color: #263549;
+}
