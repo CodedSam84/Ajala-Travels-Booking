@@ -78,7 +78,7 @@
 
 .search-button {
   flex: 0 1 20%;
-  border: 1px solid #8D965E;
+  border: 1px solid #8d965e;
   outline: none;
 }
 
@@ -108,4 +108,7 @@
   justify-content: center;
   padding: 0 20px;
   border-radius: 6px;
+  box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.07);
+  -webkit-box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.07);
+  -moz-box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.07);
 }

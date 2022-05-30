@@ -5,9 +5,10 @@ import PersonTwoToneIcon from '@mui/icons-material/PersonTwoTone';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { DateRange } from 'react-date-range';
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { format } from "date-fns";
 import Guest from "../guest/Guest";
+import { GuestContext } from "../../context/guest";
 
 const Hero = () => {
   const [date, setDate] = useState([
@@ -22,6 +23,9 @@ const Hero = () => {
   const [toggleCalendar, setToggleCalendar] = useState(false);
   const [toggleProfile, setToggleProfile] = useState(false);
 
+  const { guest, updateGuestValue } = useContext(GuestContext);
+  const updateGuest = (info, operation) => updateGuestValue(info, operation);
+
   const dateChangeHandler = item => setDate([item.selection]);
 
   const calendarToggleHandler = () => {
@@ -32,7 +36,8 @@ const Hero = () => {
     setToggleCalendar(!toggleCalendar);
   };
   
-  const profileToggleHandler = () => {
+  const profileToggleHandler = (e) => {
+    e.stopPropagation();
     if (toggleCalendar) { 
       setToggleCalendar(!toggleCalendar) 
     }
@@ -40,8 +45,18 @@ const Hero = () => {
     setToggleProfile(!toggleProfile);
   };
 
+  const toggleFromHero = () => {
+    if (toggleProfile) { 
+      setToggleProfile(!toggleProfile) 
+    }
+
+    if (toggleCalendar) { 
+      setToggleCalendar(!toggleCalendar) 
+    }
+  };
+
   return (
-    <div className="hero">
+    <div onClick={toggleFromHero}className="hero">
       <div className="hero-content">
         <h2>Book a stay in one of the worlds best place</h2>
         <p>Vacation home for you and whoever you call family. Enjoy the vacation and peace of mind you deserve.</p>
@@ -62,7 +77,7 @@ const Hero = () => {
         
         <div onClick={profileToggleHandler} className="search-filter-item adult">
           <PersonTwoToneIcon/>
-          <span>2 adults .0 children .1 room </span>
+          <span>{guest.adults} adults .{guest.children} children .{guest.rooms} rooms </span>
         </div>
 
         <button className="search-button">SEARCH</button>
@@ -77,9 +92,9 @@ const Hero = () => {
       /> }
 
       { toggleProfile && <div className="guest-profile-container">
-        <Guest guestInfo="adults"/>
-        <Guest guestInfo="children"/>
-        <Guest guestInfo="rooms"/>
+        <Guest guestInfo="adults" guest={guest} updateGuest={updateGuest} limit={1}/>
+        <Guest guestInfo="children" guest={guest} updateGuest={updateGuest} limit={0}/>
+        <Guest guestInfo="rooms" guest={guest} updateGuest={updateGuest} limit={1}/>
       </div> }
     </div>
   )

@@ -1,25 +1,23 @@
-import { useState } from "react";
 import "./guest.css";
 
-const Guest = ({guestInfo}) => {
-  const [guest, setGuest] = useState({
-    adults: 1,
-    children: 0,
-    rooms: 1,
-  })
-  
-  const increaseGuestValue = () => {
-    const newGuest = { ...guest, [guestInfo]: guest[guestInfo] + 1};
-    setGuest(newGuest);
-  }
+const Guest = ({guestInfo, guest, updateGuest, limit}) => {
+  const increaseGuestProfile = (e) => {
+    e.stopPropagation();
+    updateGuest(guestInfo, "plus");
+  };
+
+  const decreaseGuestProfile = (e) => {
+    e.stopPropagation();
+    updateGuest(guestInfo, "minus");
+  };
 
   return (
     <div className="guest">
       <span>{guestInfo}</span>
       <div className="guest-profiles">
-        <button onClick={increaseGuestValue} className="btn plus-btn">&#43;</button>
+        <button onClick={increaseGuestProfile} className="btn plus-btn">&#43;</button>
         <span>{guest[guestInfo]}</span>
-        <button className="btn minus-btn">&#45;</button>
+        <button disabled={guest[guestInfo] <= limit} onClick={decreaseGuestProfile} className="btn minus-btn">&#45;</button>
       </div>
     </div>
   )

@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+.minus-btn:disabled {
+  cursor: not-allowed;
+}
+
 .guest-profiles {
   display: flex;
   justify-content: space-around;
@@ -27,5 +31,5 @@
 
 .btn {
   background-color: transparent;
-  border: 1px solid gray;
+  border: 1px solid #8D965E;
 }
