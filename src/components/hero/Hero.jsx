@@ -82,14 +82,15 @@ const Hero = () => {
 
         <button className="search-button">SEARCH</button>
       </div>
-      
-      { toggleCalendar && <DateRange
-        editableDateInputs={true}
-        onChange={dateChangeHandler}
-        moveRangeOnFirstSelection={false}
-        ranges={date}
-        className="date"
-      /> }
+      <div onClick={(e) => e.stopPropagation()}>
+        { toggleCalendar && <DateRange
+          editableDateInputs={true}
+          onChange={dateChangeHandler}
+          moveRangeOnFirstSelection={false}
+          ranges={date}
+          className="date"
+        /> }
+      </div>
 
       { toggleProfile && <div className="guest-profile-container">
         <Guest guestInfo="adults" guest={guest} updateGuest={updateGuest} limit={1}/>

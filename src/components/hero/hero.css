@@ -94,6 +94,9 @@
   position: absolute;
   bottom: -375px;
   left: 400px;
+  box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.07);
+  -webkit-box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.07);
+  -moz-box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.07);
 }
 
 .guest-profile-container {
