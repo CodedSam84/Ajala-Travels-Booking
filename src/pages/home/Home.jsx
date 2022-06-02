@@ -1,3 +1,4 @@
+import Content from "../../components/content/Content";
 import Hero from "../../components/hero/Hero";
 
 import "./home.css";
@@ -5,7 +6,8 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home">
-      <Hero/> 
+      <Hero/>
+      <Content/>
     </div>
   )
 }

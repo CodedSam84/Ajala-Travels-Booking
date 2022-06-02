@@ -1,0 +1,21 @@
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.property-type {
+  width: 100%;
+  margin-top: 30px;
+  font-family: 'Inter', sans-serif;
+  color: rgba(0, 0, 0, 0.801);
+  font-weight: normal;
+}
+
+.property-type > h2 {
+  font-size: 23px;
+}
+
+.property-info > h3 {
+  margin-bottom: 5px;
+}

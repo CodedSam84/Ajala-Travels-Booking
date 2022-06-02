@@ -1,0 +1,53 @@
+.location-name-container {
+  display: flex;
+  color: #ffff;
+  font-weight: bold;
+  margin-bottom: 7px;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.location-name-container > span {
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: .5px;
+}
+
+.properties {
+  color: rgba(255, 255, 255, 0.904);
+  font-weight: normal;
+}
+
+.location {
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 20px;
+  height: 270px;
+  flex: 1 1 30%;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+
+.first {
+  flex: 1 1 40%;
+}
+
+.second {
+  flex: 1 1 40%;
+}
+
+.offer {
+  position: absolute;
+
+}
+
+.flag {
+  background-image: url("../../assets/uk.png");
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
