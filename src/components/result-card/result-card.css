@@ -1,0 +1,144 @@
+.result-card {
+  border: 1px solid rgba(141, 150, 94, 0.6);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.result-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-card-review {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.result-card-review > button {
+  padding: 7px 5px;
+  background-color: #8d965e;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 0px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.card-review-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-review-content > h3 {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.801);
+}
+
+.card-review-content > span {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.801);
+  font-size: small;
+}
+.result-card-description {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  align-items: flex-start;
+}
+
+.result-card-price > button {
+  padding: 10px;
+  background-color: #8d965e;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.price {
+  color: #333;
+  font-size: 20px;
+}
+
+.result-card-rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.property-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.property-details > span {
+  max-width: 650px;
+  font-size: 13px;
+}
+
+.small {
+  font-size: 15px !important;
+  color: #404d03;
+}
+
+.property-link {
+  text-decoration: none;
+  color: #263549;
+  font-size: 22px;
+}
+
+.stars {
+  margin-top: 7px;
+}
+
+.result-card-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.property-details > span {
+  color: #333;
+}
+
+.apartment {
+  font-size: 15px;
+}
+
+.total {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.801);
+  font-size: 13px;
+}
+
+.cancellation {
+  font-size: 15px;
+  color: #263549;
+}
+
+.result-card-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.result-card-container {
+  display: flex;
+  gap: 15px;
+}

@@ -1,0 +1,29 @@
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
+.review > span {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.review-details {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.rating {
+  background-color: #8D965E;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.total-reviews {
+  color: rgba(0, 0, 0, 0.479);
+  font-size: 12px;
+}

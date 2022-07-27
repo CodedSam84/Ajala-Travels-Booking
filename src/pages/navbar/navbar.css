@@ -17,6 +17,9 @@
   margin: auto;
   padding: 0 50px;
   color: #292929;
+  position: sticky;
+  z-index: 50;
+  top: 0;
 }
 
 .nav-link {

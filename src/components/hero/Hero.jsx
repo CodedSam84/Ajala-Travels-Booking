@@ -9,6 +9,7 @@ import { useContext, useState } from "react";
 import { format } from "date-fns";
 import Guest from "../guest/Guest";
 import { GuestContext } from "../../context/guest";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const [date, setDate] = useState([
@@ -20,13 +21,17 @@ const Hero = () => {
     }
   ]);
 
+  const navigate = useNavigate();
   const [toggleCalendar, setToggleCalendar] = useState(false);
   const [toggleProfile, setToggleProfile] = useState(false);
+  const [destination, setDestination] = useState("");
 
   const { guest, updateGuestValue } = useContext(GuestContext);
   const updateGuest = (info, operation) => updateGuestValue(info, operation);
 
   const dateChangeHandler = item => setDate([item.selection]);
+  const inputChangeHandler = e => setDestination(e.target.value);
+  const navigateHandler = () => navigate("/hotels", {state: {destination, date, guest}});
 
   const calendarToggleHandler = () => {
     if (toggleProfile) { 
@@ -64,7 +69,7 @@ const Hero = () => {
       <div className="search-filters">
         <div className="search-filter-item input-size">
           <AirlineSeatIndividualSuiteTwoToneIcon/>
-          <input type="text" placeholder="Where are you going?"/>
+          <input type="text" onChange={inputChangeHandler} placeholder="Where are you going?"/>
         </div>
 
         <div onClick={calendarToggleHandler} className="search-filter-item check">
@@ -80,15 +85,16 @@ const Hero = () => {
           <span>{guest.adults} adults .{guest.children} children .{guest.rooms} rooms </span>
         </div>
 
-        <button className="search-button">SEARCH</button>
+        <button className="search-button" onClick={navigateHandler}>SEARCH</button>
       </div>
       <div onClick={(e) => e.stopPropagation()}>
         { toggleCalendar && <DateRange
           editableDateInputs={true}
           onChange={dateChangeHandler}
-          moveRangeOnFirstSelection={false}
+          moveRangeOnFirstSelection={false} 
           ranges={date}
           className="date"
+          minDate={new Date()}
         /> }
       </div>
 

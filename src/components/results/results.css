@@ -1,0 +1,13 @@
+.results {
+  flex: 3;
+  background-color: white;
+  font-weight: normal;
+}
+
+.results > h2 {
+  padding-bottom: 40px;
+  padding-top: 20px;
+  font-weight: normal;
+  font-size: 25px;
+  color: #263549;
+}

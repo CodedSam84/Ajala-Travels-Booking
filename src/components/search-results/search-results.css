@@ -1,0 +1,15 @@
+.search-results {
+  display: flex;
+  margin: auto;
+  max-width: 1120px;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.search-page {
+  position: absolute;
+  top: 440px;
+  left: 63px;
+}

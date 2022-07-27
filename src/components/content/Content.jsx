@@ -6,6 +6,7 @@ import thirdUrl from "../../assets/everton.jpg";
 import fourthUrl from "../../assets/newcastle.jpg";
 import fifthUrl from "../../assets/cambridge.jpg";
 import PropertyType from "../property-type/PropertyType";
+import GuestReviews from "../guest-reviews/GuestReviews";
 
 const Content = () => {
   return (
@@ -16,6 +17,7 @@ const Content = () => {
       <Location name="Newcastle" properties="800" price="800,000" url={fourthUrl}/>
       <Location name="Huddersfield" properties="250" price="800,000" url={fifthUrl}/>
       <PropertyType/>
+      <GuestReviews/>
     </div>
   );
 };

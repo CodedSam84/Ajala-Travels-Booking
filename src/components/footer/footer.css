@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  max-width: 1220px;
+  margin: auto;
+  justify-content: space-evenly;
+  font-family: 'Inter', sans-serif;
+  padding: 15px;
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.616);
+  gap: 40px;
+}
+
+.lists-container > li {
+  margin-bottom: 10px;
+  list-style: none;
+  cursor: pointer;
+}
