@@ -13,6 +13,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1180px) {
+  .property {
+    width: 100%;
+  }
+}
+
 .property-info > span {
   font-weight: 300;
   font-size: 14px;

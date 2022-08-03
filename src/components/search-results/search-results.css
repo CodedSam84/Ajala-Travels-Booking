@@ -8,8 +8,12 @@
   font-family: 'Inter', sans-serif;
 }
 
-.search-page {
-  position: absolute;
-  top: 440px;
-  left: 63px;
+@media screen and (max-width: 1125px) {
+  .search-results {
+    flex-direction: column;
+  }
+
+  .search {
+    position: static;
+  }
 }

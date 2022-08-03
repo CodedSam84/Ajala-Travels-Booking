@@ -22,7 +22,7 @@ const GuestReviews = () => {
         />
         <GuestCard 
           type="Lund" 
-          description="Beautiful apartment by the sea front" 
+          description="Beautiful apartment by the sea front"
           url={secondUrl} 
           price="55,000" 
           rating={9.6} 

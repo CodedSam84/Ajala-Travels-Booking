@@ -11,6 +11,12 @@
   top: 70px;
 }
 
+@media screen and (max-width: 800px) {
+  .search{
+    position: static;
+  }
+}
+
 .input-container {
   display: flex;
   align-items: center;
@@ -24,6 +30,8 @@
   outline: none;
   border: none;
   margin-left: 8px;
+  color: rgba(0, 0, 0, 0.801);
+  font-size: 15px;
 }
 
 .input-container > span {
@@ -59,12 +67,13 @@
 
 ::placeholder {
   font-size: 15px;
+  font-family: 'Inter', sans-serif;
 }
 
 .search-page {
   position: absolute;
-  top: 440px;
-  left: 63px;
+  top: 355px;
+  left: -10px;
 }
 
 .calendar-container {

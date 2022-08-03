@@ -5,7 +5,6 @@
   justify-content: space-evenly;
   font-family: 'Inter', sans-serif;
   padding: 15px;
-  padding-top: 30px;
   font-size: 14px;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.616);
@@ -16,4 +15,14 @@
   margin-bottom: 10px;
   list-style: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1260px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, .5fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px; 
+  }
 }

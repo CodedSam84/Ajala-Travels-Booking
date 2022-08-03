@@ -7,6 +7,14 @@
 
 }
 
+.navbar-container {
+  width: 100%;
+  background-color: #F9F8F7;
+  position: sticky;
+  z-index: 50;
+  top: 0;
+}
+
 .navbar {
   background-color: #F9F8F7;
   display: flex;
@@ -17,13 +25,15 @@
   margin: auto;
   padding: 0 50px;
   color: #292929;
-  position: sticky;
-  z-index: 50;
-  top: 0;
 }
 
-.nav-link {
-  
+@media screen and (max-width: 650px) {
+  .navbar {
+    padding: 0px 5px;
+  }
+}
+
+.nav-link { 
   text-decoration: none;
   color: #263549;
 }
@@ -34,6 +44,23 @@
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .nav-link-container {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .button {
+    margin-left: 10px;
+    width: 100px;
+  }
+
+  .logo-container {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .nav-link-container:hover {

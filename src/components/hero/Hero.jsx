@@ -61,19 +61,19 @@ const Hero = () => {
   };
 
   return (
-    <div onClick={toggleFromHero}className="hero">
+    <div onClick={toggleFromHero} className="hero">
       <div className="hero-content">
         <h2>Book a stay in one of the worlds best place</h2>
         <p>Vacation home for you and whoever you call family. Enjoy the vacation and peace of mind you deserve.</p>
       </div>
       <div className="search-filters">
         <div className="search-filter-item input-size">
-          <AirlineSeatIndividualSuiteTwoToneIcon/>
+          <AirlineSeatIndividualSuiteTwoToneIcon className="hero-icon"/>
           <input type="text" onChange={inputChangeHandler} placeholder="Where are you going?"/>
         </div>
 
         <div onClick={calendarToggleHandler} className="search-filter-item check">
-          <CalendarMonthTwoToneIcon/>
+          <CalendarMonthTwoToneIcon className="hero-icon"/>
           <span>
             { `${format(date[0].startDate, "dd/MM/yyyy" )} - 
             ${format(date[0].endDate, "dd/MM/yyyy")}` }
@@ -81,7 +81,7 @@ const Hero = () => {
         </div>
         
         <div onClick={profileToggleHandler} className="search-filter-item adult">
-          <PersonTwoToneIcon/>
+          <PersonTwoToneIcon className="hero-icon"/>
           <span>{guest.adults} adults .{guest.children} children .{guest.rooms} rooms </span>
         </div>
 

@@ -2,11 +2,10 @@ import { Link, Outlet } from "react-router-dom";
 import "./navbar.css";
 import SupervisorAccountTwoTone from "@mui/icons-material/SupervisorAccountTwoTone";
 import ManageAccountsTwoToneIcon from '@mui/icons-material/ManageAccountsTwoTone';
-import { Fragment } from "react";
 
 const Navbar = () => {
   return (
-    <Fragment>
+    <div className="navbar-container">
       <div className="navbar">
         <Link className="logo-container" to=""></Link>
         <div className="nav-links">
@@ -26,8 +25,7 @@ const Navbar = () => {
           <button className="button">List your Property</button>
         </div>
       </div>
-      <Outlet/>
-    </Fragment>
+    </div>
   )
 }
 

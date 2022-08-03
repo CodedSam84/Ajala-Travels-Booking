@@ -42,6 +42,41 @@
   flex: 2;
 }
 
+@media screen and (max-width: 930px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-container > button {
+    padding: 13px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-container {
+    width: 300px;
+  }
+
+  .cta-header {
+    max-width: 200px;
+    padding: 5px;
+  }
+
+  .cta {
+    padding: 10px 0;
+  }
+
+  .cta-header {
+    max-width: 300px;
+  }
+
+  .cta-container {
+    max-width: 500px;
+  }
+}
+
 .form-input > input {
   padding: 10px;
   width: 100%;

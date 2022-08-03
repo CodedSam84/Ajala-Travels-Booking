@@ -2,5 +2,275 @@
   display: flex;
   max-width: 1120px;
   margin: auto;
-  padding: 20px 0px;
+  padding: 40px 0px;
+  gap: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .hotel-show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel-gallery {
+    padding-left: 10px;
+  }
+}
+
+.hotel {
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+.reserve-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.reserve-wrapper > h2 {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-weight: normal;
+  font-size: 25px;
+  color: #263549;
+}
+
+.hotel-address {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hotel-address > span {
+  font-size: 15px;
+  color: #333;
+}
+
+.icon-small {
+  font-size: 20px;
+}
+
+.hotel-gallery {
+  flex: 3;
+}
+
+.reserve-wrapper > button {
+  padding: 5px;
+  background-color: #8d965e;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+}
+
+.grid {
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 100px;
+  cursor: pointer;
+}
+
+.modal-wrapper {
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+  background-color: black;
+}
+
+.modal-bkg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 100%;
+  width: 80vw;
+  margin: auto;
+  position: relative;
+}
+
+.cancel-icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.icon-bkg-image {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 250px;
+  border: 1px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.right {
+  right: 20px;
+}
+
+.left {
+  left: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1160px) {
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 10px;
+  }
+
+  .reserve-wrapper > button {
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #8d965e;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+  }
+
+  .summary {
+    padding: 15px;
+    max-width: 500px;
+  }
+
+  .highlight {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .features {
+    gap: 20px !important;
+  }
+}
+
+.grid-3 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-4 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-6 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-7 {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  width: 100%;
+  height: 100%;
+}
+
+.summary {
+  flex: 2;
+}
+
+.summary > p {
+  color: #363333;
+  font-size: 14px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1120px;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: .8;
+  background-color: #ebf3ff;
+  border: 1px solid #ebf3ff;
+  padding: 20px;
+}
+
+.highlight > h4 {
+  color: rgba(0, 0, 0, 0.96);
+  margin-bottom: 15px;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.highlight > button {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #8d965e;
+  outline: none;
+  border: none;
+  color: white;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.type {
+  font-size: 12px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.96);
+}
+
+.mg-bottom {
+  margin-bottom: 15px;
 }

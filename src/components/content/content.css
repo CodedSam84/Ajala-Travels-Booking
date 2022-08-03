@@ -9,3 +9,9 @@
   margin: auto;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1180px) {
+  .content {
+    padding-top: 250px;
+  }
+}

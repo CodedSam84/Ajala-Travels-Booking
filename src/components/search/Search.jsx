@@ -38,17 +38,37 @@ const Search = () => {
     if (calendarEnd) { 
       setCalendarEnd(!calendarEnd);
     }
-    setCalendarStart(!calendarStart)
+
+    if (guestModal) {
+      setGuestModal(!guestModal);
+    }
+
+    setCalendarStart(!calendarStart);
   };
 
   const toggleCalendarEnd = () => {
     if (calendarStart) { 
       setCalendarStart(!calendarStart);
     }
+
+    if (guestModal) {
+      setGuestModal(!guestModal);
+    }
+
     setCalendarEnd(!calendarEnd)
   };
 
-  const toggleGuestModal = () => setGuestModal(!guestModal);
+  const toggleGuestModal = () => {
+    if (calendarStart) { 
+      setCalendarStart(!calendarStart);
+    }
+
+    if (calendarEnd) { 
+      setCalendarEnd(!calendarEnd);
+    }
+    
+    setGuestModal(!guestModal)
+  };
 
   return (
     <div className="search">
