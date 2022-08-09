@@ -143,6 +143,10 @@
   .search-button {
     width: 70% !important;
   }
+
+  .hero {
+    height: 60vh;
+  }
 }
 
 .search-filter-item {

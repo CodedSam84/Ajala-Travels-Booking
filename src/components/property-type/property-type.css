@@ -20,9 +20,38 @@
 @media screen and (max-width: 800px) {
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+    grid-column-gap: 10px;
+  }
+
+  .property-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-column-gap: 10px;
+  }
+
+  .property-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-column-gap: 10px;
   }
 
   .property-image {

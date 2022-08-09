@@ -3,7 +3,7 @@ import "./property-type.css";
 
 import firstUrl from "../../assets/booking2.jpg";
 import secondUrl from "../../assets/booking3.jpg";
-import thirdUrl from "../../assets/booking4.jpg";
+import thirdUrl from "../../assets/booking2.jpg";
 import fourthUrl from "../../assets/booking5.jpg";
 import fifthUrl from "../../assets/booking6.jpg";
 import sixthUrl from "../../assets/booking7.jpg";

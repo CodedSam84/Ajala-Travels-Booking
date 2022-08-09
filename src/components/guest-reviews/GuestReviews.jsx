@@ -2,7 +2,7 @@ import "./guest-reviews.css";
 
 import firstUrl from "../../assets/booking2.jpg";
 import secondUrl from "../../assets/booking3.jpg";
-import thirdUrl from "../../assets/booking4.jpg";
+import thirdUrl from "../../assets/booking2.jpg";
 import fourthUrl from "../../assets/booking5.jpg";
 import GuestCard from "../guest-card/GuestCard";
 
