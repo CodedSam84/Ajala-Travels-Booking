@@ -119,6 +119,18 @@
   }
 }
 
+@media screen and (max-width: 390px) {
+  .search-filters {
+    left: 20px !important;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .search-filters {
+    left: 17px !important;
+  }
+}
+
 .hero-content h2 {
   font-style: normal;
   font-weight: 400;
@@ -170,7 +182,7 @@
     align-items: stretch;
     bottom: 200px;
     left: 40px;
-    padding: 0px;
+    padding: 50px 0px;
     width: 50%;
     gap: 10px;
     background-color: transparent;
