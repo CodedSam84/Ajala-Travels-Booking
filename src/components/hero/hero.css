@@ -205,6 +205,16 @@
   .hero {
     height: 60vh;
   }
+
+  .guest-profile-container {
+    top: 300px !important;
+    left: 10px !important;
+  }
+
+  .date {
+    top: 300px !important;
+    left: 10px !important;
+  }
 }
 
 @media screen and (max-width: 1130px) {
