@@ -2,9 +2,9 @@ import Location from "../location/Location";
 import "./content.css";
 import firstUrl from "../../assets/photo.jpg";
 import secondUrl from "../../assets/leicester2.jpg";
-import thirdUrl from "../../assets/everton.jpg";
+import thirdUrl from "../../assets/everton-fig-min.jpg";
 import fourthUrl from "../../assets/newcastle.jpg";
-import fifthUrl from "../../assets/cambridge.jpg";
+import fifthUrl from "../../assets/cambridge-fig.jpg";
 import PropertyType from "../property-type/PropertyType";
 import GuestReviews from "../guest-reviews/GuestReviews";
 
